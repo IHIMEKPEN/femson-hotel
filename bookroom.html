@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Productly | Design Agency Landing Page UI</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/assets/img/favicons/favicon.png">
+    <link rel="manifest" href="/static/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="/static/assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="/static/assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html"><img src="/static/assets/img/logo.svg"
+                        height="31" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                    </span></button>
+                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#marketing">Rooms</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" aria-current="page" href="#validation">Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#superhero">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#marketing">Resources</a></li> -->
+                    </ul>
+                    <!-- <div class="d-flex ms-lg-4"><a class="btn btn-secondary-outline" href="#!">Sign In</a><a
+                    class="btn btn-warning ms-3" href="#!">Sign Up</a></div>
+              </div> -->
+                </div>
+        </nav>
+
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="pt-5" id="marketing">
+
+            <div class="container">
+                <form class="mb-3" id="paymentForm" method="post">
+                    <div class=" form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email-address" placeholder="Enter your email" required />
+                    </div><br />
+                    <div class="form-group">
+                        <label for=amount">Package</label>
+                        <select name="amount" id="amount" required>
+                            <option value="90000">Presidental Lodge, ₦ 90,000</option>
+                            <option value="40000">Executive Lodge, ₦ 40,000</option>
+                            <option value="25000">Standard Lodge, ₦ 25,000</option>
+                            <option value="18000">Classic Lodge, ₦ 18,000</option>
+                        </select>
+                    </div><br />
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="first-name" placeholder="Enter your name" />
+                    </div><br />
+
+                    <div class="form-group">
+                        <label name="roomNo" for="first-name">Room No</label>
+                        <input name="roomNo" type="number" placeholder="Enter your Room Number" id="first-name" />
+                    </div><br />
+
+
+                    <button class="btn btn-warning fw-medium py-1" type="submit"
+                        onclick="payWithPaystack()">Pay</button>
+                </form>
+
+            </div><!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="pb-2 pb-lg-5">
+
+            <div class="container">
+                <div class="row border-top border-top-secondary pt-7">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1"><img
+                            class="mb-4" src="/static/assets/img/logo.svg" width="184" alt="" /></div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
+                        <p class="fs-2 mb-lg-4">Quick Links</p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">About
+                                    us</a></li>
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Blog</a>
+                            </li>
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none"
+                                    href="#!">Contact</a></li>
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
+                        <p class="fs-2 mb-lg-4">Legal stuff</p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none"
+                                    href="#!">Disclaimer</a></li>
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none"
+                                    href="#!">Financing</a></li>
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Privacy
+                                    Policy</a></li>
+                            <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Terms of
+                                    Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4">
+                        <p class="fs-2 mb-lg-4">
+                            knowing you're always on the best energy deal.</p>
+                        <form class="mb-3">
+                            <input class="form-control" type="email" placeholder="Enter your phone Number"
+                                aria-label="phone" />
+                        </form>
+                        <button class="btn btn-warning fw-medium py-1">Sign up Now</button>
+                    </div>
+                </div>
+            </div><!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="text-center py-0">
+
+            <div class="container">
+                <div class="container border-top py-3">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-auto mb-1 mb-md-0">
+                            <p class="mb-0">&copy; 2022 Dredgreat Group </p>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <p class="mb-0">
+                                Made <span class="fas fa-heart mx-1 text-danger"> </span>by <a
+                                    class="text-decoration-none ms-1" href="https://themewagon.com/"
+                                    target="_blank">Dredgreat Groups</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <iframe class="rounded" style="width:100%;height:500px;" src="https://www.youtube.com/embed/_lhdhL4UDIo"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="/static/vendors/@popperjs/popper.min.js"></script>
+    <script src="/static/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="/static/vendors/fontawesome/all.min.js"></script>
+    <script src="/static/assets/js/theme.js"></script>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+        const paymentForm = document.getElementById('paymentForm');
+        paymentForm.addEventListener("submit", payWithPaystack, false);
+        function payWithPaystack(e) {
+            e.preventDefault();
+            let handler = PaystackPop.setup({
+                key: 'pk_test_d66c4acd7f648a70197480bd871766a0363f6e95', // Replace with your public key
+                email: document.getElementById("email-address").value,
+                amount: document.getElementById("amount").value * 100,
+                ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+
+                
+
+                // label: "Optional string that replaces customer email"
+                onClose: function () {
+                    alert('Window closed.');
+                },
+                callback: function (response) {
+                    let message = 'Payment complete! Reference: ' + response.reference;
+                    window.location = "http://localhost:5000/payment/verify";
+                    alert(message);
+                }
+            });
+            handler.openIframe();
+        }
+
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
+        rel="stylesheet">
+</body>
+
+</html>
