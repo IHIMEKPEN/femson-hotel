@@ -196,6 +196,6 @@ app.get('/payment/verify', async (req, res) => {
 
 
 // Server setup
-app.listen(5000, () => {
-    console.log('App listen at port 5000');
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`App listen at port ${process.env.PORT}`);
 });
